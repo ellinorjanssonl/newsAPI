@@ -5,7 +5,7 @@ module.exports = async (req, res) => {
   const category = req.query.category || 'general'; 
 
   const API_KEY = process.env.API_KEY; 
-  const URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=eeb0aac586ae480a823a06d1a916b787`;
+  const URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`;
 
   try {
     const newsResponse = await fetch(URL);
