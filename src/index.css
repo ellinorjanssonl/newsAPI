@@ -1,0 +1,10 @@
+.nav-link-hover:hover {
+  background-color:#851a1a; /* Ändra färgen enligt önskemål */
+  color: #ffffff; /* Ändra färgen enligt önskemål */
+}
+
+.nav-link{
+  color: #ffffff; /* Ändra färgen enligt önskemål */
+  border-radius: 10px;
+  cursor: pointer;
+}
