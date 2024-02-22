@@ -2,10 +2,10 @@ const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
   // Hämta kategorin från query parametrar
-  const category = req.query.category || 'general'; // Använd 'general' som standardvärde om ingen kategori anges
+  const category = req.query.category || 'general'; 
 
-  const API_KEY = process.env.API_KEY; // Se till att du har definierat API_KEY i din Vercel-projektmiljö
-  const URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`;
+  const API_KEY = process.env.API_KEY; 
+  const URL = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=eeb0aac586ae480a823a06d1a916b787`;
 
   try {
     const newsResponse = await fetch(URL);
